@@ -1,0 +1,49 @@
+/* Variáveis para padronizar o layout */
+:root{
+    --cor-pagina: #149f14;
+    --cor-cartao: #e7e8bf;
+    --border-radius: 10px;
+    --margin: 20px;
+    --padding: 20px;
+    --largura: 280px;
+}
+
+/* Manter tamanho absoluto na altura */
+html, body, main{
+    height: 100%;
+}
+
+/* Cor da página sem margem */
+body {
+	background-color: var(--cor-pagina);
+	margin: 0px;
+}
+
+/* Display Flex no limite da página */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Área do formulário */
+section {
+    background-color: var(--cor-cartao);
+	padding: var(--padding);
+	border-radius: var(--border-radius);
+    width: var(--largura);
+}
+/* Título do formulário */
+section h3{
+    text-align: center;
+}
+/* Linha das caixas de texto do formulário */
+section div {
+	margin: var(--margin) 0px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Linha dos botões do formulário*/
+section div:last-child{
+    justify-content: space-evenly;
+}
