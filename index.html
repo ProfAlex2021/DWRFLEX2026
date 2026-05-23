@@ -7,6 +7,7 @@
         <title>Document</title>
         <!-- incluir css/style.css -->
         <link href="css/style.css" rel="stylesheet" />
+        <script src="js/validar.js"></script>
     </head>
 
     <body>
@@ -25,6 +26,25 @@
                     <div>
                         <label for="txt_email">E-mail: </label>
                         <input type="email" placeholder="Digite seu e-mail" id="txt_email" />
+                    </div>
+                    <div>
+                        <label for="txt_senha">Senha:</label>
+                        <input type="password" placeholder="Digite sua senha" id="txt_senha" />
+                    </div>
+                    <div>
+                        <label for="txt_confirmar_senha">Confirmar Senha:</label>
+                        <input type="password" placeholder="Confirme sua senha" id="txt_confirmar_senha" />
+                    </div>
+                    <div class="regras">
+                        <p>Sua senha deve respeitar as sguintes regras:</p>
+                        <ul>
+                            <li id="reg_tamanho">Possuir pelo menos 8 cacteres</li>
+                            <li id="reg_maiuscula">Possuir pelo menos 1 letra maiúscula</li>
+                            <li id="reg_minuscula">Possuir pelo menos 1 letra minúscula</li>
+                            <li id="reg_numero">Possuir pelo menos 1 número</li>
+                            <li id="reg_caracter">Possuir pelo menos 1 caracter especial / símbolo</li>
+                            <li id="reg_identica">As duas senhas devem ser idênticas</li>
+                        </ul>
                     </div>
                     <div>
                         <button type="submit">Enviar</button>
